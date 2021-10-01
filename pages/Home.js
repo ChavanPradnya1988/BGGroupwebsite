@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
-import item from "../public/home/homepagebanner.png"
+import item from "../utils/images/homepagebanner.png"
 import { makeStyles } from "@material-ui/core";
+import Image from 'next/image';
 
 const useStyles = makeStyles({
     image: {
-      width: "100%",
-      height: "80vh",
+      height: "100vh !important",
     },
    
   });
@@ -15,7 +15,7 @@ const portfolio = () => {
   return (
     <>
       <Layout title="Home" >
-      <img src={item} alt="" className={classes.image} />
+      <Image src={item} alt="Picture of the author"/>
         <h1> Homepage page </h1>
 
       </Layout>

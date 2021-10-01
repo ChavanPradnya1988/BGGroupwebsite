@@ -15,7 +15,7 @@ export const MenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: 'CAS Ventures JV',
+    title: 'CAS Ventures',
     path: '/contact',
     cName: 'dropdown-link'
   }

@@ -3,9 +3,9 @@ import {makeStyles} from "@material-ui/core";
 const drawerWidth = 300;
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    backgroundColor: '#f7F7F7',
-    height: '65px',
-    padding: '0 20px',
+    backgroundColor: '#ffffff',
+    height: '90px',
+    padding: '5 20px',
     '& a': {
       color: 'black',
       margin: '0px 15px',
@@ -14,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
   mainbar: {
     flexGrow: 1,
   },
-  logo: {
-    width: '55px',
-    height: '55px',
+  // logo: {
+  //   width: '10% !important',
+  //   height: '50% !important',
 
-    // margingBottom: '-30px',
-  },
+  //   // margingBottom: '-30px',
+  // },
   sectionDesktop: {
     display: 'none',
     [ theme.breakpoints.up("md") ]: {

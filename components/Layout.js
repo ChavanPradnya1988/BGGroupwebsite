@@ -3,6 +3,7 @@ import { AppBar, Container, Toolbar, Typography, CssBaseline } from "@material-u
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import Navbar from "./Navbar/Navbar";
 import useStyles from "../utils/styles";
+import Footer from "./Footer/footer";
 
 const Layout = ({ title, description, children }) => {
   const theme = createTheme({
@@ -45,20 +46,12 @@ const Layout = ({ title, description, children }) => {
       </Head>
       <ThemeProvider theme={theme} >
         <CssBaseline />
-        {/* <AppBar className={classes.navbar} position="sticky">
-          <Toolbar>
-            <Typography component="h1" variant="h1" color="primary"  >
-              TechIthouse
-            </Typography>
-          </Toolbar>
-        </AppBar> */}
+       
         < Navbar />
         <Container   className={classes.main} >
           {children}
         </Container>
-        <footer className={classes.footer} >
-          <h2>footer</h2>
-        </footer>
+        <Footer />
       </ThemeProvider>
     </>
   );
